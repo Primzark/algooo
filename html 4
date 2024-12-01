@@ -1,0 +1,71 @@
+Début
+    déclarer nouvelle variable age
+    déclarer nouvelle variable dureePermis
+    déclarer nouvelle variable nbAccidents
+    déclarer nouvelle variable anciennete
+    déclarer nouvelle variable tarif
+
+    afficher message "Entrez l'âge du conducteur :"
+    lire age
+    afficher message "Entrez la durée (en années) depuis qu'il a son permis :"
+    lire dureePermis
+    afficher message "Entrez le nombre d'accidents responsables :"
+    lire nbAccidents
+    afficher message "Entrez l'ancienneté dans la compagnie (en années) :"
+    lire anciennete
+
+    SI age < 25 ALORS
+        SI dureePermis < 2 ALORS
+            SI nbAccidents = 0 ALORS
+                affecter "rouge" à tarif
+            SINON
+                affecter "refusé" à tarif
+            FIN SI
+        SINON
+            SI nbAccidents = 0 ALORS
+                affecter "orange" à tarif
+            SINON SI nbAccidents = 1 ALORS
+                affecter "rouge" à tarif
+            SINON
+                affecter "refusé" à tarif
+            FIN SI
+        FIN SI
+    SINON
+        SI dureePermis < 2 ALORS
+            SI nbAccidents = 0 ALORS
+                affecter "orange" à tarif
+            SINON SI nbAccidents = 1 ALORS
+                affecter "rouge" à tarif
+            SINON
+                affecter "refusé" à tarif
+            FIN SI
+        SINON
+            SI nbAccidents = 0 ALORS
+                affecter "vert" à tarif
+            SINON SI nbAccidents = 1 ALORS
+                affecter "orange" à tarif
+            SINON SI nbAccidents = 2 ALORS
+                affecter "rouge" à tarif
+            SINON
+                affecter "refusé" à tarif
+            FIN SI
+        FIN SI
+    FIN SI
+
+    SI anciennete > 5 ET tarif ≠ "refusé" ALORS
+        SI tarif = "vert" ALORS
+            affecter "bleu" à tarif
+        SINON SI tarif = "orange" ALORS
+            affecter "vert" à tarif
+        SINON
+            affecter "orange" à tarif
+        FIN SI
+    FIN SI
+
+    SI tarif = "refusé" ALORS
+        afficher message "La compagnie refuse d'assurer le conducteur."
+    SINON
+        afficher message "Le tarif attribué est :"
+        afficher tarif
+    FIN SI
+Fin

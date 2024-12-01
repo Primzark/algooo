@@ -1,0 +1,21 @@
+Début
+    déclarer nouvelle variable age
+    déclarer nouvelle variable sexe
+    déclarer nouvelle variable resultat
+
+    afficher message "Entrez l'âge de l'habitant :"
+    lire age
+    afficher message "Entrez le sexe de l'habitant (H pour homme, F pour femme) :"
+    lire sexe
+
+    SI sexe = "H" ET age > 20 ALORS
+        affecter "Imposable" à resultat
+    SINON SI sexe = "F" ET age >= 18 ET age <= 35 ALORS
+        affecter "Imposable" à resultat
+    SINON
+        affecter "Non imposable" à resultat
+    FIN SI
+
+    afficher message "L'habitant est :"
+    afficher resultat
+Fin

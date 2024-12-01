@@ -1,0 +1,18 @@
+Début
+  
+    Nombre nombre, produit, i
+
+ 
+    Écrire "Entrez un entier positif :"
+    Lire nombre
+
+    produit  1
+
+   
+    POUR i  1 À nombre FAIRE
+        produit ← produit * i
+    FIN POUR
+
+    
+    Écrire "Le produit de tous les entiers de 1 à", nombre, "est :", produit
+Fin

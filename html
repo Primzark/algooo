@@ -1,0 +1,18 @@
+Début
+    déclarer nouvelle variable nbPhotocopies
+    déclarer nouvelle variable total
+
+    afficher message "Entrez le nombre de photocopies effectuées :"
+    lire nbPhotocopies
+
+    SI nbPhotocopies <= 10 ALORS
+        affecter nbPhotocopies * 0.10 à total
+    SINON SI nbPhotocopies <= 30 ALORS
+        affecter (10 * 0.10) + ((nbPhotocopies - 10) * 0.09) à total
+    SINON
+        affecter (10 * 0.10) + (20 * 0.09) + ((nbPhotocopies - 30) * 0.08) à total
+    FIN SI
+
+    afficher message "Le coût total est de :"
+    afficher calcul total
+Fin

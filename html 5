@@ -1,0 +1,45 @@
+Début
+    Variables
+        Nombre jour, mois, annee, nbJoursDansMois, estBissextile
+        Chaîne resultat
+
+    
+    Écrire "Entrez le jour :"
+    Lire jour
+    Écrire "Entrez le mois :"
+    Lire mois
+    Écrire "Entrez l'année :"
+    Lire annee
+
+    
+    Si (Modulo(annee, 4) = 0 Et Modulo(annee, 100) ≠ 0) Ou Modulo(annee, 400) = 0 Alors
+        affecter 1 a estBissextile
+    Sinon
+        affecter 0 a estBissextile
+    Fin Si
+
+    
+    Si mois = 1 Ou mois = 3 Ou mois = 5 Ou mois = 7 Ou mois = 8 Ou mois = 10 Ou mois = 12 Alors
+        affecter 31 a nbJoursDansMois
+    Sinon Si mois = 4 Ou mois = 6 Ou mois = 9 Ou mois = 11 Alors
+        affecter 30 a nbJoursDansMois
+    Sinon Si mois = 2 Alors
+        Si estBissextile = 1 Alors
+            affecter 29 a nbJoursDansMois
+        Sinon
+            affecter 28 a nbJoursDansMois
+        Fin Si
+    Sinon
+        affecter 0 a nbJoursDansMois
+    Fin Si
+
+    
+    Si nbJoursDansMois > 0 Et jour >= 1 Et jour <= nbJoursDansMois Alors
+        affecter "valide" a resultat
+    Sinon
+        affecter "invalide" a resultat
+    Fin Si
+
+    
+    Écrire "La date est ", resultat
+Fin

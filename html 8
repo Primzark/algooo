@@ -1,0 +1,22 @@
+Début
+    
+    Nombre nombreLignes, i, j
+
+    
+    Répéter
+        Écrire "Entrez le nombre de lignes (6 ou 9 uniquement) :"
+        Lire nombreLignes
+    Jusqu'à (nombreLignes = 6 OU nombreLignes = 9)
+
+    Si nombreLignes = 6 Alors
+        Afficher message "Vous avez demandé 6 lignes :"
+        POUR i  1 À 6 FAIRE
+            Écrire "Ligne ", i
+        FIN POUR
+    Sinon Si nombreLignes = 9 Alors
+        Afficher message "Vous avez demandé 9 lignes :"
+        POUR i  1 À 9 FAIRE
+            Écrire "Ligne ", i
+        FIN POUR
+    Fin Si
+Fin

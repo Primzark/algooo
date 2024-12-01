@@ -1,0 +1,13 @@
+Début
+    
+    Nombre note
+
+    
+    TANT QUE (note < 1 OU note > 5) Faire
+        Écrire "Entrez une évaluation (note entre 1 et 5) :"
+        Lire note
+    Fin TANT QUE
+
+   
+    Écrire "Vous avez saisi la note :", note
+Fin
