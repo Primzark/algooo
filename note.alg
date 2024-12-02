@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description texte="" courant="SI (Note &lt;0 OU Note >20) ALORS"/>
+    <description texte="" courant="SI (Note>=14 ET Note &lt;=16) ALORS"/>
     <extension extnom="inactif"/>
     <fonction fctcode="" fctetat="inactif"/>
     <F2 F2etat="inactif" F2defaut="" F2lignes="" F2para=""/>
@@ -18,10 +18,10 @@
             <item code="4#Note invalide#0" algoitem="AFFICHER &quot;Note invalide&quot;"/>
             <item code="8#finsi" algoitem="FIN_SI"/>
         </item>
-        <item code="6#Note>=12 ET Note&lt;=13" algoitem="SI (Note>=12 ET Note&lt;=13) ALORS">
+        <item code="6#Note>=12 ET Note&lt;=14" algoitem="SI (Note>=12 ET Note&lt;=14) ALORS">
             <item code="7#debutsi" algoitem="DEBUT_SI"/>
             <item code="4#mention assez bien#0" algoitem="AFFICHER &quot;mention assez bien&quot;"/>
-            <item code="6#Note>=14 ET Note &lt;=15" algoitem="SI (Note>=14 ET Note &lt;=15) ALORS">
+            <item code="6#Note>=14 ET Note &lt;=16" algoitem="SI (Note>=14 ET Note &lt;=16) ALORS">
                 <item code="7#debutsi" algoitem="DEBUT_SI"/>
                 <item code="4#mention bien#0" algoitem="AFFICHER &quot;mention bien&quot;"/>
                 <item code="6#Note>=16 ET Note &lt;=20" algoitem="SI (Note>=16 ET Note &lt;=20) ALORS">
